@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    height: 100vh;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -30,6 +30,16 @@ nav{
 #covid-bot{
     background-color: rgb(238, 236, 236);
     grid-area: covid-bot;
+    font-size: 2vw;
+}
+
+#covid-bot img {
+    height: 50vh;
+    width: 50vh;
+}
+
+#covid-img {
+    grid-area: covid-img;
 }
 
 #blog {
@@ -58,18 +68,17 @@ nav{
     padding-left: 10px;
 }
 
-footer {
-    background-color: rgb(238, 236, 236);
-    grid-area: footer;
-}
-
 @media only screen and (max-width: 550px){
+
+    #covid-bot {
+        display: block;
+    }
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas: 
         "sidebar"
-        "covid-bot"
+        "covid-img"
         "blog"
         "orders"
         "inventory"

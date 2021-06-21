@@ -167,6 +167,10 @@
         margin-right: -100px;
     }
 
+    .aboutme-h1 {
+        padding-right: 50px;
+    }
+
     .pclass {
         left: 4000px;
     }
@@ -179,6 +183,17 @@
         padding-right: 50px;
     }
 
+    #angular h1 {
+        padding-right: 50px;
+    }
+
+    #python h1 {
+        padding-right: 50px;
+    }
+
+    #sql h1 {
+        padding-right: 35;
+    }
     .h3class {
         margin-top: 540px;
   
@@ -186,13 +201,16 @@
 
     .container {
         width: 100%;
-        margin-left: -60px;
-        grid-template-columns: 0.001fr 0.001fr;
+        margin-left: 125px;
+        grid-template-columns: 0.001fr;
         grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
         grid-template-areas: 
-        "angularItem javaItem"
-        "pythonItem sqlItem"
-        "javascriptItem htmlcssItem";
+        "angularItem"
+        "javaItem"
+        "pythonItem"
+        "sqlItem"
+        "javascriptItem"
+        "htmlcssItem";
     }
 
 }
