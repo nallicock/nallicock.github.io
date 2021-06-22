@@ -3,7 +3,7 @@
     display:grid;
     justify-content: center;
     padding-top: 70px;
-    grid-template-columns: 0.25fr 1fr;
+    grid-template-columns: 0.15fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "sidebar-grid covid-grid"
