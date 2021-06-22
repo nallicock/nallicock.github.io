@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(241, 240, 240);
+    background-color: #2c2b2b;
     display:grid;
     justify-content: center;
     padding-top: 70px;
@@ -19,14 +19,14 @@
     grid-template-rows: 1fr;
     grid-template-areas:
     "lensc1-grid lensc2-grid lensc3-grid";
-    background-color: rgb(241, 240, 240);
+    background-color: #2c2b2b;
 }
 
 .sidebar{
     margin-top: 50px;
     margin-bottom: 135px;
     grid-area: sidebar-grid;
-    background-color: rgb(241, 240, 240);
+    background-color: #2c2b2b;
     margin-left: 10px;
     color:white;
 }
