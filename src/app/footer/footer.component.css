@@ -1,14 +1,16 @@
 .footer {
     left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
+    height: 100%;
     flex: auto;
-    background-color: #3c3b5f;
+    background-color: #1d1c1c;
     color: white;
     text-align: float-left;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 150px;
-    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding-left: 100px;
+    padding-bottom: 20px;
     position:relative;
 
 }
@@ -19,13 +21,9 @@
     text-align: center;
 }
 
-#please {
-    font-size: 1.5vw;
-    text-align: center;
-}
 
 .footer h1{
-    font-size: 1.5vw;
+    font-size: 100%;
     text-align: center;
 }
 
