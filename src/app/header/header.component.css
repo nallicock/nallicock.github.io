@@ -11,10 +11,11 @@
     grid-template-areas: "nameItem homeItem aboutItem emailItem phoneItem githubItem";
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 897px) {
     .contentHead {
         position:absolute;
-        margin-bottom: 1000px;
+        padding-bottom: 1px;
+        margin-bottom: 100px;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: 

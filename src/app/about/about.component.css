@@ -1,87 +1,189 @@
 .container {
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(241, 240, 240);
+    display:grid;
+    justify-content: center;
+    padding-top: 70px;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "nav nav nav nav"
-    "sidebar covid-bot covid-bot covid-bot"
-    "sidebar blog blog blog"
-    "sidebar inventory inventory inventory"
-    "sidebar banking banking banking";
-    grid-gap: 0.2rem;
-
+    "sidebar-grid covid-grid"
+    "sidebar-grid blog-grid"
+    "sidebar-grid inventory-grid"
+    "sidebar-grid banking-grid"
 }
 
-nav{
-    background-color: white;
-    grid-area: nav;
+.container2 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lensc1-grid lensc2-grid lensc3-grid";
+    background-color: rgb(241, 240, 240);
 }
 
-.projects h1, p{
-    color: white;
+.sidebar{
+    margin-top: 50px;
+    margin-bottom: 135px;
+    grid-area: sidebar-grid;
+    background-color: rgb(241, 240, 240);
+    margin-left: 10px;
+    color:white;
+}
+
+.sidebar h1, p {
+    padding-left: 30px;
+    padding-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.projects p {
-    font-size: 25px;
-    margin-right: 10px;
+.sidebar p{
 }
-#covid-bot{
-    background-color: rgb(238, 236, 236);
-    grid-area: covid-bot;
-    font-size: 2vw;
+
+#covid-bot {
+    grid-area: covid-grid;
 }
 
 #covid-bot img {
-    height: 50vh;
-    width: 50vh;
-}
-
-#covid-img {
-    grid-area: covid-img;
+    height: 100%;
+    width:100%;
 }
 
 #blog {
-    background-color: #3c3b5f;
-    grid-area: blog;
+    grid-area: blog-grid;
+    width: 80%;
+    height: 80%;
+    
+}
+
+#blog img {
+    height: 100%;
 }
 
 #inventory {
-    background-color: rgb(238, 236, 236);
-    grid-area: inventory;
+    grid-area: inventory-grid;
+    width: 80%;
+    height: 80%;
+}
+
+#inventory img {
+    height: 100%;
 }
 
 #banking {
-    background-color: rgb(238, 236, 236);
-    grid-area: banking;
-    background-color: #3c3b5f;
-}
-.projects img {
-    float: left;
-    padding-right: 10px;
+    grid-area: banking-grid;
+    width: 80%;
+    height: 80%;
 }
 
-#sidebar {
-    background-color: #3c3b5f;
-    grid-area: sidebar;
-    padding-left: 10px;
+#banking img {
+    height: 100%;
 }
 
-@media only screen and (max-width: 550px){
+#lenscrafters1 {
+    grid-area: lensc1-grid;
+    width: 80%;
+}
+
+#lenscrafters2 {
+    grid-area: lensc2-grid;
+    width: 80%;
+}
+
+#lenscrafters3 {
+    grid-area: lensc3-grid;
+    width: 80%;
+}
+
+.imageContainer {
+    position: relative;
+    width: 500px;
+    margin: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+.image-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.image-desc {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3c3b5fe7;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.overlay:hover {
+    transition: 1s;
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 1130px) {
 
     #covid-bot {
-        display: block;
+        margin-top: 275px;
     }
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+
+    #lenscrafters1 {
+        width: 450px;
+    }
+    
+    #lenscrafters2 {
+        width: 450px;
+    }
+    
+    #lenscrafters3 {
+        width: 450px;
+    }
+
+
+    .container {
+        
+
+        grid-template-columns: 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: 
-        "sidebar"
-        "covid-img"
-        "blog"
-        "orders"
-        "inventory"
-        "footer";
+        "covid-grid"
+        "blog-grid"
+        "inventory-grid"
+        "banking-grid"
+        "sidebar-grid";
     }
+
+    .container2 {
+        grid-template-columns: 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: 
+        "lensc1-grid"
+        "lensc2-grid"
+        "lensc3-grid";
+    }
+
 }

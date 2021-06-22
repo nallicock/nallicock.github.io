@@ -157,7 +157,34 @@
     grid-area: htmlcssItem;
 }
 
+@media only screen and (max-width: 1850px) {
+    .container {
+        grid-template-columns: 0.001fr 0.001fr 0.001fr;
+        grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
+        grid-template-areas: 
+        "angularItem javaItem pythonItem"
+        "sqlItem javascriptItem htmlcssItem";
+    }
+}
+
+@media only screen and (max-width: 897px) {
+    .container {
+        grid-template-columns: 0.001fr 0.001fr;
+        grid-template-rows: 0.01fr 0.01fr 0.01fr;
+        grid-template-areas: 
+        "angularItem javaItem"
+        "pythonItem sqlItem"
+        "javascriptItem htmlcssItem";
+    }
+
+    .pclass {
+        left: 4000px;
+    }
+}
+
 @media only screen and (max-width: 550px) {
+
+
     .banner {
         margin-top: 100px;
     }
@@ -214,3 +241,4 @@
     }
 
 }
+
