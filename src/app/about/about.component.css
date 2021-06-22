@@ -38,6 +38,7 @@
 }
 
 #covid-bot {
+    margin-left: 26%;
     grid-area: covid-grid;
 }
 
@@ -146,6 +147,7 @@
 
     #covid-bot {
         margin-top: 275px;
+        right: 13%;
     }
 
     #lenscrafters1 {
