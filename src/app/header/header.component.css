@@ -12,20 +12,24 @@
     font-family: monospace;
 }
 
+
+
 .contentHead {
     background-color: #2c2b2b;
     height: 8vh;
     display: grid;
-    top: 100px;
+    left: 30%;
+    right: 50%;
+    top: 110px;
     position: absolute;
-    z-index:1000;
-    width: 100%;
-    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    z-index:9999;
+    width: 40%;
+    grid-template-columns: 0.25fr 0.35fr 0.25fr 0.28fr;
     grid-template-rows: 1fr;
     grid-template-areas: "homeItem aboutItem contactItem githubItem";
 }
 
-@media only screen and (max-width: 897px) {
+@media only screen and (max-width: 924px) {
     .contentHead {
         position:absolute;
         padding-bottom: 1px;

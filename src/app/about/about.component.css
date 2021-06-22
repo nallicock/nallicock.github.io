@@ -38,6 +38,8 @@
 }
 
 #covid-bot {
+    height: 70%;
+    margin-top: 150px;
     margin-left: 26%;
     grid-area: covid-grid;
 }
@@ -146,7 +148,8 @@
 @media only screen and (max-width: 1130px) {
 
     #covid-bot {
-        margin-top: 275px;
+        margin-top: 250px;
+        height: 60%;
         right: 13%;
     }
 
