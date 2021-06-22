@@ -37,9 +37,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidebar p{
-}
-
 #covid-bot {
     grid-area: covid-grid;
 }
