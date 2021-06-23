@@ -114,9 +114,11 @@
     font-weight: bold;
     padding-right: 50px;
     padding-left: 50px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .image-desc {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.25em;
     margin-top: 0.25em;
     padding-right: 50px;
@@ -131,7 +133,6 @@
     height: 100%;
     background: #3c3b5fe7;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,7 +146,7 @@
 }
 
 
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1438px) {
 
     #covid-bot {
         margin-top: 250px;
