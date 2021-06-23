@@ -13,12 +13,16 @@
     left: 10%;
 }
 
+
 #banner-me {
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    height: 350px;
-    border-style: solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 20%;
+    min-width: 200px;
+    min-height: 200px;
+    margin-top: -25%;
 }
 
 
@@ -51,13 +55,14 @@
 
 .about-me {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: 'Josefin Sans', sans-serif; 
      
 }
 
 .aboutme-h1 {
-    margin-left: 45%;
-    font-family: Arial, Helvetica, sans-serif;    
+    width: 100%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;   
     padding-bottom: 30px;
 }
 
@@ -75,6 +80,7 @@
 }
 
 .language {
+    text-align: center;
     margin-right: 20%;
     margin-bottom: 100px;
     margin-left: 20%;
@@ -86,8 +92,7 @@
 .language h1 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    width: 20px;
-    margin-left: 5%;
+    width: 100%;
 }
 
 #about-me {
@@ -105,7 +110,8 @@
 }
 
 .container {
-    margin-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -143,91 +149,29 @@
     grid-area: htmlcssItem;
 }
 
-@media screen and (max-width: 1019px) {
-    .container {
-        grid-template-columns: 0.001fr 0.001fr 0.001fr;
-        grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
-        grid-template-areas: 
-        "angularItem javaItem pythonItem"
-        "sqlItem javascriptItem htmlcssItem";
-    }
 
-    #banner-me{
-        top: 33%;
-        left: 39%;
-    }
 
-    .pclass {
-        margin-left: 4%;
-        bottom: 60%;
-        width: 200px;
-    }
+@media screen and (max-width: 1024px) {
 
-    .language {
-        width: 20em;
+    #banner-me {
+        display: block;
+        margin-left: auto;
         margin-right: auto;
-        margin-left: 20%;
+        height: auto;
+        width: 20%;
+        min-width: 200px;
+        min-height: 200px;
+        margin-top: -45%;
     }
-
-    .language h1 {
-        width: 30%;
-    }
-
-    .aboutme-h1 {
-        margin-left: 38%;
-    }
-}
-
-/*tablets*/
-@media screen and (max-width: 850px) {
-    .container {
-        grid-template-columns: 0.001fr 0.001fr;
-        grid-template-rows: 0.01fr 0.01fr 0.01fr;
-        grid-template-areas: 
-        "angularItem javaItem"
-        "pythonItem sqlItem"
-        "javascriptItem htmlcssItem";
-    }
-
-    #banner-me{
-        margin-left: -5%;
-    }
-
-    .pclass {
-        margin-left: -15%;
-        bottom: 30%;
-        width: 200px;
-    }
-
+    
     .language {
-        padding-left: 50%;
-        width: 50%;
-        left: 100%;
-        position: flex;
-    }
-
-    .language h1 {
         width: 100%;
     }
 
-    .aboutme-h1 {
-        margin-left: 35%;
-    }
-}
-
-@media screen and (max-width: 640px) {
-
-    .language {
-        width: 50%;
-        margin-right:-60%;
-    }
-
-    .banner {
-        margin-top: 100px;
-    }
-
-    #banner-me{
-        
+    .language h1 {
+        position: absolute;
+        text-align: center;
+        width: 100%;
     }
 
     .aboutme-h1 {
@@ -240,25 +184,6 @@
         width: 200px;
     }
 
-    #htmlcss h1 {
-        padding-right: 30px;
-    }
-
-    #java h1 {
-        padding-right: 50px;
-    }
-    
-    #angular h1 {
-        padding-right: 50px;
-    }
-
-    #python h1 {
-        padding-right: 50px;
-    }
-
-    #sql h1 {
-        padding-right: 35;
-    }
     .h3class {
         margin-top: 540px;
   
@@ -266,9 +191,9 @@
 
     .container {
         width: 100%;
-        margin-left:27%;
-        grid-template-columns: 0.001fr;
-        grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
+        align-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: 
         "angularItem"
         "javaItem"
@@ -276,11 +201,6 @@
         "sqlItem"
         "javascriptItem"
         "htmlcssItem";
-    }
-
-    .language h1 {
-        width: 100px;
-        text-align: center;
     }
 
 }
