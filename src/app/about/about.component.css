@@ -1,17 +1,19 @@
 .pageTitle{
+    margin-top: 40px;
+    margin-bottom: -150px;
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 58px;
 }
 
 .container {
     background-color: #2c2b2b;
     display:grid;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 50px;
     grid-template-columns: 0.15fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
