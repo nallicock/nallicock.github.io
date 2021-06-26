@@ -7,7 +7,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,13 +15,10 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [{provide: LocationStrategy, useClass:HashLocationStrategy}],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
