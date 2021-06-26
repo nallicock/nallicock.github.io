@@ -15,12 +15,13 @@
   justify-content: center;
   padding-top: 50px;
   grid-template-columns: 0.15fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "sidebar-grid covid-grid"
     "sidebar-grid blog-grid"
     "sidebar-grid inventory-grid"
-    "sidebar-grid banking-grid";
+    "sidebar-grid banking-grid"
+    "sidebar-grid guessing-grid";
 }
 
 .container2 {
@@ -87,6 +88,16 @@ p {
 }
 
 #banking img {
+  height: 100%;
+}
+
+#guessing {
+  grid-area: guessing-grid;
+  width: 80%;
+  height: 80%;
+}
+
+#guessing img {
   height: 100%;
 }
 
@@ -162,6 +173,14 @@ p {
     right: 13%;
   }
 
+  #inventory {
+    height: 60%;
+  }
+
+  #guessing {
+    height: 60%;
+  }
+
   #lenscrafters1 {
     width: 450px;
   }
@@ -176,12 +195,13 @@ p {
 
   .container {
     grid-template-columns: 0.1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
     grid-template-areas:
       "covid-grid"
       "blog-grid"
       "inventory-grid"
       "banking-grid"
+      "guessing-grid"
       "sidebar-grid";
   }
 
