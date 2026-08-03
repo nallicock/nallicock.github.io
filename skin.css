@@ -72,3 +72,40 @@ html, body {
 .keyword {
     color: #FFFFFF;
 }
+
+
+#work-experience {
+    margin-top: 100px;
+}
+
+#work-experience h2 {
+    color: #FFFFFF;
+}
+
+.job {
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.job-title {
+    max-width: 400px;
+    color: #FFFFFF;
+}
+
+.job-date {
+    width: 100%;
+    max-width: 200px;
+}
+
+.job-title-desc {
+    margin: 10px;
+}
+
+.tools-used {
+    display: block;
+}
+
+#projects {
+    margin-top: 500px;
+}
