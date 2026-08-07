@@ -213,6 +213,7 @@ html, body {
 #kinnectMe {
     display: block;
     margin: 0 auto;
+    min-width: 350px;
     width: 70%;
     height: auto;
 }
