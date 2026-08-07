@@ -149,7 +149,8 @@ html, body {
     color: #FFFFFF;
 }
 
-.job {
+.job, .project {
+    transition: 0.3s;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +162,12 @@ html, body {
     justify-content: center;
 }
 
-.job-title {
+.project:hover {
+    transition: 0.3s;
+    background-color: #322C74;
+}
+
+.job-title, .project-title {
     max-width: 400px;
     color: #FFFFFF;
 }
@@ -172,7 +178,7 @@ html, body {
     max-width: 200px;
 }
 
-.job-title-desc {
+.job-title-desc, .project-title-desc {
     flex: 0 0 75%;
 }
 
@@ -207,8 +213,8 @@ html, body {
 #kinnectMe {
     display: block;
     margin: 0 auto;
-    width: auto;
-    max-height: 200px;
+    width: 70%;
+    height: auto;
 }
 
 @keyframes shake {
