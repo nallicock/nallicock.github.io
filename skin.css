@@ -167,9 +167,14 @@ html, body {
     background-color: #322C74;
 }
 
-.job-title, .project-title {
+.job-title {
     max-width: 400px;
     color: #FFFFFF;
+}
+
+.project-title {
+    color: #FFFFFF;
+    text-align: center;
 }
 
 .job-date {
