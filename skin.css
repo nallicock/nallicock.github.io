@@ -159,6 +159,8 @@ h2 {
 
 .job-desc {
   font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .job,
@@ -181,25 +183,24 @@ h2 {
 }
 
 .job-title {
-  max-width: 400px;
   color: #ffffff;
   font-size: 20px;
+  text-align: center;
 }
 
 .job-date {
-  flex: 0 0 20%;
-  width: 100%;
+  float: left;
   max-width: 200px;
 }
 
 .job-title-desc,
 .project-title-desc {
-  flex: 0 0 75%;
+  display: block;
 }
 
 .tools-used {
-  flex: 0 0 100%;
-  margin-top: 10px;
+  margin: 10px auto;
+  width: 70%;
 }
 
 #tools ul {
@@ -208,6 +209,7 @@ h2 {
   gap: 10px;
   list-style-type: none;
   justify-content: center;
+  padding: 0px;
 }
 
 #tools li {
@@ -233,6 +235,8 @@ h2 {
 
 .project-desc {
   font-size: 18px;
+  width: 90%;
+  margin: 15px auto;
 }
 
 #kinnectMe {
